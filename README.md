@@ -347,6 +347,149 @@ This diagram serves as a foundation for detailed requirement analysis and helps 
 
 ---
 
+## Acceptance Criteria
+
+Acceptance Criteria are specific, measurable conditions that a software feature must satisfy to be considered complete and acceptable to stakeholders. They serve as the bridge between high-level requirements and detailed test cases, ensuring that development teams understand exactly what needs to be delivered.
+
+### Importance of Acceptance Criteria in Requirement Analysis
+
+**Clear Definition of Done:**
+
+- Provide unambiguous criteria for when a feature is considered complete
+- Eliminate ambiguity between stakeholders and development teams
+- Ensure all parties have a shared understanding of feature expectations
+
+**Quality Assurance Foundation:**
+
+- Serve as the basis for test case development
+- Enable systematic validation of feature functionality
+- Support automated testing and continuous integration
+
+**Stakeholder Alignment:**
+
+- Ensure business requirements are translated into testable conditions
+- Facilitate communication between technical and non-technical stakeholders
+- Provide objective measures for feature acceptance
+
+**Project Management Support:**
+
+- Enable accurate estimation of development effort
+- Support sprint planning and backlog refinement
+- Provide clear milestones for project tracking
+
+### Characteristics of Effective Acceptance Criteria
+
+**Specific and Measurable:**
+
+- Criteria should be clear and unambiguous
+- Each criterion should be testable and verifiable
+- Avoid subjective terms like "user-friendly" or "fast"
+
+**User-Centric:**
+
+- Focus on user value and business outcomes
+- Written from the user's perspective
+- Describe what the user can accomplish
+
+**Independent and Complete:**
+
+- Each criterion should be self-contained
+- Criteria should cover all aspects of the feature
+- Avoid dependencies between criteria
+
+**Realistic and Achievable:**
+
+- Criteria should be technically feasible
+- Consider constraints and limitations
+- Align with project timeline and resources
+
+### Example: Acceptance Criteria for Checkout Feature
+
+**Feature**: Checkout Process in Booking Management System
+
+**User Story**: As a customer, I want to complete my booking by providing payment information so that I can secure my reservation.
+
+**Acceptance Criteria:**
+
+**AC-001: Payment Method Selection**
+
+- **Given** a customer has items in their booking cart
+- **When** they proceed to checkout
+- **Then** they should see available payment methods (credit card, debit card, digital wallet)
+- **And** they can select their preferred payment method
+
+**AC-002: Payment Information Entry**
+
+- **Given** a customer has selected a payment method
+- **When** they enter payment details
+- **Then** the system should validate the payment information in real-time
+- **And** display clear error messages for invalid information
+- **And** mask sensitive information (credit card numbers) for security
+
+**AC-003: Booking Confirmation**
+
+- **Given** a customer has provided valid payment information
+- **When** they submit the payment
+- **Then** the system should process the payment through the payment gateway
+- **And** generate a unique booking confirmation number
+- **And** send a confirmation email to the customer
+- **And** update the inventory to reflect the booking
+
+**AC-004: Error Handling**
+
+- **Given** a payment transaction fails
+- **When** the customer attempts to complete checkout
+- **Then** the system should display a user-friendly error message
+- **And** not charge the customer's payment method
+- **And** allow the customer to retry with different payment information
+- **And** maintain the booking items in their cart
+
+**AC-005: Receipt Generation**
+
+- **Given** a payment transaction is successful
+- **When** the checkout process completes
+- **Then** the system should generate a detailed receipt
+- **And** include booking details, payment information, and cancellation policy
+- **And** provide an option to download or print the receipt
+- **And** store the receipt in the customer's booking history
+
+**AC-006: Security Compliance**
+
+- **Given** a customer is entering payment information
+- **When** they submit sensitive data
+- **Then** all data should be encrypted in transit and at rest
+- **And** the system should comply with PCI DSS standards
+- **And** no sensitive payment information should be stored in plain text
+- **And** the system should log security events for audit purposes
+
+### Best Practices for Writing Acceptance Criteria
+
+**Use the Given-When-Then Format:**
+
+- **Given**: Preconditions and context
+- **When**: The action or event that occurs
+- **Then**: The expected outcome or result
+
+**Keep Criteria Atomic:**
+
+- Each criterion should test one specific behavior
+- Avoid complex scenarios with multiple outcomes
+- Break down complex features into smaller, testable criteria
+
+**Focus on Business Value:**
+
+- Ensure criteria align with business objectives
+- Prioritize user experience and functionality
+- Consider both happy path and edge cases
+
+**Maintain Traceability:**
+
+- Link criteria to specific requirements
+- Ensure coverage of all functional and non-functional requirements
+- Support requirement validation and testing
+
+---
+
 ## Learning Objective
 
 The objective of this project is to enhance a professional developer's ability to:
