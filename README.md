@@ -85,28 +85,54 @@ Requirement Analysis is the **first and most critical phase** of the SDLC, influ
 
 ### Key Activities in Requirement Analysis
 
-1. **Requirement Elicitation**
+The requirement analysis process consists of five fundamental activities that work together to ensure comprehensive understanding and documentation of system requirements:
 
-   - Stakeholder interviews and workshops
-   - Document analysis and system observation
-   - User surveys and feedback collection
+#### 1. **Requirement Gathering**
 
-2. **Requirement Documentation**
+- **Collecting existing information** from business documents, manuals, and procedures
+- **Reviewing current systems** to understand existing processes and limitations
+- **Identifying stakeholders** who will be affected by or have influence over the system
+- **Gathering business rules** and constraints that must be followed
+- **Documenting current pain points** and areas for improvement
+- **Understanding organizational context** and business objectives
 
-   - Writing clear, unambiguous requirement statements
-   - Creating use cases and user stories
-   - Developing requirement specifications
+#### 2. **Requirement Elicitation**
 
-3. **Requirement Analysis**
+- **Conducting stakeholder interviews** to understand needs and expectations
+- **Facilitating workshops** and focus groups for collaborative requirement discovery
+- **Observing users** in their work environment to understand actual workflows
+- **Administering surveys** and questionnaires to gather quantitative feedback
+- **Analyzing competitor systems** to identify industry best practices
+- **Using prototyping** to explore and validate requirements with stakeholders
 
-   - Identifying conflicts and dependencies
-   - Analyzing feasibility and risks
-   - Prioritizing requirements
+#### 3. **Requirement Documentation**
 
-4. **Requirement Validation**
-   - Reviewing requirements with stakeholders
-   - Testing requirement clarity and completeness
-   - Ensuring alignment with business objectives
+- **Writing clear, unambiguous requirement statements** using standard templates
+- **Creating use cases** that describe system interactions from user perspective
+- **Developing user stories** that capture requirements in user-centric format
+- **Documenting functional requirements** that specify what the system should do
+- **Specifying non-functional requirements** for performance, security, and usability
+- **Creating requirement specifications** that serve as contract between stakeholders
+
+#### 4. **Requirement Analysis and Modeling**
+
+- **Identifying conflicts and dependencies** between different requirements
+- **Analyzing feasibility** of requirements from technical and business perspectives
+- **Prioritizing requirements** based on business value and implementation complexity
+- **Creating requirement models** using diagrams and visual representations
+- **Performing gap analysis** to identify missing requirements
+- **Assessing risks** associated with requirement implementation
+- **Creating traceability matrices** to link requirements to business objectives
+
+#### 5. **Requirement Validation**
+
+- **Reviewing requirements with stakeholders** to ensure accuracy and completeness
+- **Testing requirement clarity** by having different people interpret the same requirement
+- **Validating requirement completeness** against business objectives
+- **Ensuring requirement consistency** across all documented requirements
+- **Verifying requirement testability** to ensure they can be validated
+- **Obtaining formal approval** from all relevant stakeholders
+- **Establishing change control procedures** for requirement modifications
 
 ### Benefits of Effective Requirement Analysis
 
