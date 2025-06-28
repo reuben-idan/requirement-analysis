@@ -282,6 +282,71 @@ Well-analyzed requirements consider **long-term system evolution**:
 
 ---
 
+## Use Case Diagrams
+
+Use Case Diagrams are powerful visual tools in requirement analysis that illustrate the interactions between system actors and the system itself. They provide a high-level view of system functionality from the user's perspective, making them essential for understanding system requirements and stakeholder needs.
+
+### What are Use Case Diagrams?
+
+Use Case Diagrams are UML (Unified Modeling Language) diagrams that show:
+
+- **Actors**: External entities that interact with the system (users, other systems, or devices)
+- **Use Cases**: Specific functions or features that the system provides
+- **Relationships**: How actors interact with use cases
+- **System Boundary**: The scope of the system being analyzed
+
+### Benefits of Use Case Diagrams
+
+**Clear System Scope Definition:**
+
+- Delineate what is inside and outside the system
+- Identify system boundaries and interfaces
+- Clarify what the system will and won't do
+
+**Stakeholder Communication:**
+
+- Provide a common language for technical and non-technical stakeholders
+- Facilitate discussions about system functionality
+- Bridge the gap between business requirements and technical implementation
+
+**Requirement Validation:**
+
+- Ensure all user needs are captured as use cases
+- Identify missing functionality early in the process
+- Validate requirements with stakeholders through visual representation
+
+**System Design Foundation:**
+
+- Guide the development of detailed requirements
+- Inform system architecture decisions
+- Support test case development
+
+### Booking Management System Use Case Diagram
+
+The following diagram illustrates the key actors and use cases for the booking management system:
+
+![Booking Management System Use Case Diagram](alx-booking-uc.png)
+
+**Key Actors Identified:**
+
+- **Customer**: Primary user who makes bookings and manages their account
+- **Administrator**: System manager who oversees operations and manages inventory
+- **Payment Gateway**: External system for processing payments
+- **Email System**: External system for sending notifications
+
+**Primary Use Cases:**
+
+- User registration and authentication
+- Booking management (create, modify, cancel)
+- Payment processing
+- Inventory management
+- Reporting and analytics
+- Notification system
+
+This diagram serves as a foundation for detailed requirement analysis and helps ensure all stakeholder needs are properly captured and understood.
+
+---
+
 ## Learning Objective
 
 The objective of this project is to enhance a professional developer's ability to:

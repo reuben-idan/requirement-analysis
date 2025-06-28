@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Management System - Use Case Diagram</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: white;
+      }
+      .diagram-container {
+        width: 1200px;
+        height: 800px;
+        border: 2px solid #333;
+        position: relative;
+        background-color: #f9f9f9;
+      }
+      .system-boundary {
+        border: 2px dashed #666;
+        margin: 20px;
+        padding: 20px;
+        height: 700px;
+        background-color: white;
+      }
+      .actor {
+        position: absolute;
+        width: 60px;
+        height: 80px;
+        text-align: center;
+        font-size: 10px;
+        font-weight: bold;
+      }
+      .actor::before {
+        content: "👤";
+        font-size: 40px;
+        display: block;
+      }
+      .customer {
+        top: 50px;
+        left: 50px;
+      }
+      .admin {
+        top: 50px;
+        right: 50px;
+      }
+      .payment-gateway {
+        bottom: 50px;
+        left: 50px;
+      }
+      .email-system {
+        bottom: 50px;
+        right: 50px;
+      }
+      .use-case {
+        position: absolute;
+        width: 120px;
+        height: 60px;
+        border: 2px solid #333;
+        border-radius: 30px;
+        background-color: #e6f3ff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 8px;
+        font-weight: bold;
+        padding: 5px;
+      }
+      .customer-use-cases {
+        left: 150px;
+        top: 50px;
+      }
+      .admin-use-cases {
+        right: 150px;
+        top: 50px;
+      }
+      .external-use-cases {
+        bottom: 150px;
+        left: 50px;
+      }
+      .line {
+        position: absolute;
+        background-color: #333;
+        height: 2px;
+      }
+      .title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .legend {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        font-size: 10px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="diagram-container">
+      <div class="title">Booking Management System - Use Case Diagram</div>
+
+      <div class="system-boundary">
+        <!-- Actors -->
+        <div class="actor customer">Customer</div>
+        <div class="actor admin">Administrator</div>
+        <div class="actor payment-gateway">Payment Gateway</div>
+        <div class="actor email-system">Email System</div>
+
+        <!-- Customer Use Cases -->
+        <div class="use-case customer-use-cases" style="top: 50px">
+          Register Account
+        </div>
+        <div class="use-case customer-use-cases" style="top: 120px">
+          Login/Logout
+        </div>
+        <div class="use-case customer-use-cases" style="top: 190px">
+          Search Services
+        </div>
+        <div class="use-case customer-use-cases" style="top: 260px">
+          Make Booking
+        </div>
+        <div class="use-case customer-use-cases" style="top: 330px">
+          Modify Booking
+        </div>
+        <div class="use-case customer-use-cases" style="top: 400px">
+          Cancel Booking
+        </div>
+        <div class="use-case customer-use-cases" style="top: 470px">
+          Make Payment
+        </div>
+        <div class="use-case customer-use-cases" style="top: 540px">
+          View History
+        </div>
+
+        <!-- Admin Use Cases -->
+        <div class="use-case admin-use-cases" style="top: 50px">
+          Manage Users
+        </div>
+        <div class="use-case admin-use-cases" style="top: 120px">
+          Manage Inventory
+        </div>
+        <div class="use-case admin-use-cases" style="top: 190px">
+          Set Pricing
+        </div>
+        <div class="use-case admin-use-cases" style="top: 260px">
+          View Reports
+        </div>
+        <div class="use-case admin-use-cases" style="top: 330px">
+          Process Refunds
+        </div>
+        <div class="use-case admin-use-cases" style="top: 400px">
+          Generate Analytics
+        </div>
+        <div class="use-case admin-use-cases" style="top: 470px">
+          System Config
+        </div>
+
+        <!-- External System Use Cases -->
+        <div class="use-case external-use-cases" style="left: 50px">
+          Process Payment
+        </div>
+        <div class="use-case external-use-cases" style="left: 200px">
+          Handle Refunds
+        </div>
+        <div class="use-case external-use-cases" style="left: 350px">
+          Send Confirmations
+        </div>
+        <div class="use-case external-use-cases" style="left: 500px">
+          Send Notifications
+        </div>
+      </div>
+
+      <div class="legend">
+        Legend: 👤 = Actor, Oval = Use Case, Dashed Border = System Boundary
+      </div>
+    </div>
+  </body>
+</html>

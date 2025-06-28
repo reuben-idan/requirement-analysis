@@ -1,0 +1,50 @@
+BOOKING MANAGEMENT SYSTEM - USE CASE DIAGRAM
+
+Actors:
+- Customer (Primary Actor)
+- Administrator (Primary Actor)
+- Payment Gateway (External System)
+- Email System (External System)
+
+Use Cases:
+
+Customer Use Cases:
+1. Register Account
+2. Login/Logout
+3. View Profile
+4. Update Profile
+5. Search Services
+6. View Availability
+7. Make Booking
+8. Modify Booking
+9. Cancel Booking
+10. View Booking History
+11. Make Payment
+12. View Receipts
+
+Administrator Use Cases:
+1. Manage Users
+2. Manage Services/Inventory
+3. Set Pricing Rules
+4. View Reports
+5. Manage Bookings
+6. Process Refunds
+7. Generate Analytics
+8. System Configuration
+
+External System Interactions:
+- Payment Gateway: Process Payment, Handle Refunds
+- Email System: Send Confirmations, Send Notifications
+
+Relationships:
+- Customer -> Register Account, Login/Logout, View Profile, Update Profile
+- Customer -> Search Services, View Availability, Make Booking, Modify Booking, Cancel Booking
+- Customer -> View Booking History, Make Payment, View Receipts
+- Administrator -> Manage Users, Manage Services/Inventory, Set Pricing Rules
+- Administrator -> View Reports, Manage Bookings, Process Refunds, Generate Analytics, System Configuration
+- Payment Gateway -> Process Payment, Handle Refunds
+- Email System -> Send Confirmations, Send Notifications
+
+System Boundary:
+- All use cases are within the Booking Management System boundary
+- Payment Gateway and Email System are external actors outside the system boundary 
