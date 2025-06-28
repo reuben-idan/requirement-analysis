@@ -71,17 +71,94 @@ Requirement Analysis is the **first and most critical phase** of the SDLC, influ
 
 ### Types of Requirements
 
+Requirements in software development are categorized into two main types: Functional and Non-Functional. Understanding the distinction between these types is crucial for comprehensive system design and implementation.
+
 #### Functional Requirements
 
-- Describe **what** the system should do
-- Define specific behaviors and features
-- Examples: user authentication, data processing, reporting capabilities
+Functional requirements define **what** the system should do - the specific behaviors, features, and functions that the system must perform to meet business needs.
+
+**For the Booking Management System:**
+
+**User Management:**
+
+- The system shall allow users to register with email, password, and personal information
+- The system shall authenticate users using email and password combination
+- The system shall allow users to update their profile information
+- The system shall provide password reset functionality via email
+
+**Booking Operations:**
+
+- The system shall allow users to search for available services/resources
+- The system shall display real-time availability of services/resources
+- The system shall allow users to make reservations with date, time, and duration
+- The system shall provide booking confirmation with unique booking ID
+- The system shall allow users to modify existing bookings
+- The system shall allow users to cancel bookings with cancellation policy enforcement
+- The system shall send email notifications for booking confirmations and changes
+
+**Payment Processing:**
+
+- The system shall integrate with payment gateways for secure transactions
+- The system shall support multiple payment methods (credit card, debit card, digital wallets)
+- The system shall generate invoices and receipts for completed transactions
+- The system shall handle refunds according to cancellation policies
+
+**Administrative Functions:**
+
+- The system shall allow administrators to manage service/resource inventory
+- The system shall provide reporting capabilities for booking analytics
+- The system shall allow administrators to set pricing and availability rules
+- The system shall support bulk operations for managing multiple bookings
 
 #### Non-Functional Requirements
 
-- Describe **how well** the system should perform
-- Define quality attributes and constraints
-- Examples: performance, security, usability, scalability
+Non-functional requirements define **how well** the system should perform - the quality attributes, constraints, and performance characteristics that ensure the system meets user expectations.
+
+**For the Booking Management System:**
+
+**Performance Requirements:**
+
+- The system shall respond to user queries within 2 seconds for 95% of requests
+- The system shall support concurrent access by at least 1000 users simultaneously
+- The system shall process payment transactions within 5 seconds
+- The system shall maintain 99.9% uptime during business hours
+
+**Security Requirements:**
+
+- The system shall encrypt all sensitive data in transit and at rest
+- The system shall implement secure authentication with password hashing
+- The system shall comply with PCI DSS standards for payment processing
+- The system shall provide role-based access control for administrative functions
+- The system shall log all security-related events for audit purposes
+
+**Usability Requirements:**
+
+- The system shall be accessible via web browsers and mobile devices
+- The system shall support multiple languages (English, Spanish, French)
+- The system shall provide intuitive navigation with maximum 3 clicks to complete booking
+- The system shall include help documentation and user guides
+- The system shall provide responsive design for various screen sizes
+
+**Reliability Requirements:**
+
+- The system shall maintain data integrity with automatic backup every 6 hours
+- The system shall implement transaction rollback for failed operations
+- The system shall provide error handling with user-friendly error messages
+- The system shall support disaster recovery with RTO of 4 hours
+
+**Scalability Requirements:**
+
+- The system shall support horizontal scaling to accommodate growth
+- The system shall handle seasonal booking spikes (3x normal load)
+- The system shall support integration with third-party services
+- The system shall maintain performance with database growth up to 1TB
+
+**Compliance Requirements:**
+
+- The system shall comply with GDPR for data protection and privacy
+- The system shall maintain audit trails for all booking transactions
+- The system shall support data export for regulatory reporting
+- The system shall implement data retention policies as per business requirements
 
 ### Key Activities in Requirement Analysis
 
